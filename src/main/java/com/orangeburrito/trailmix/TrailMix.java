@@ -20,20 +20,21 @@ import java.util.stream.Collectors;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("trailmix")
-public class TrailMix
-{
+public class TrailMix {
     private static final Logger LOGGER = LogManager.getLogger();
+    public static final String MOD_ID = "trailmix";
+    public static TrailMix instance;
 
 
     public TrailMix() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
+        instance = this;
         MinecraftForge.EVENT_BUS.register(this);
     }
 
-    private void setup(final FMLCommonSetupEvent event)
-    {
+    private void setup(final FMLCommonSetupEvent event) {
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
