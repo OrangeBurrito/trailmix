@@ -1,16 +1,14 @@
 package com.orangeburrito.trailmix;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import com.orangeburrito.trailmix.init.BlockInit;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
-import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
@@ -27,8 +25,9 @@ public class TrailMix {
 
 
     public TrailMix() {
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
+        final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        modEventBus.addListener(this::setup);
+        modEventBus.addListener(this::doClientStuff);
 
         instance = this;
         MinecraftForge.EVENT_BUS.register(this);
@@ -42,5 +41,16 @@ public class TrailMix {
 
     @SubscribeEvent
     public void onServerStarting(FMLServerStartingEvent event) {
+    }
+
+    public static class TrailMixItemGroup extends ItemGroup {
+        public static final TrailMixItemGroup instance = new TrailMixItemGroup(ItemGroup.GROUPS.length, "trailmixtab");
+        private TrailMixItemGroup(int index, String label) {
+            super(index, label);
+        }
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(BlockInit.old_stonecutter);
+        }
     }
 }
