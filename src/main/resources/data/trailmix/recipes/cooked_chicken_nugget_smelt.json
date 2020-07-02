@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "trailmix:chicken_nugget"
+  },
+  "result": "trailmix:cooked_chicken_nugget",
+  "experience": 0.07,
+  "cookingtime": 45
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "trailmix:block/gamecube" },
+    "facing=south": { "model": "trailmix:block/gamecube", "y": 180 },
+    "facing=west":  { "model": "trailmix:block/gamecube", "y": 270 },
+    "facing=east":  { "model": "trailmix:block/gamecube", "y": 90 }
+  }
+}

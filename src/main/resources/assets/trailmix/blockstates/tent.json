@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "trailmix:block/tent" },
+    "facing=south": { "model": "trailmix:block/tent", "y": 180 },
+    "facing=west":  { "model": "trailmix:block/tent", "y": 270 },
+    "facing=east":  { "model": "trailmix:block/tent", "y": 90 }
+  }
+}

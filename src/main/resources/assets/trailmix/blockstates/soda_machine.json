@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "trailmix:block/soda_machine" },
+    "facing=south": { "model": "trailmix:block/soda_machine", "y": 180 },
+    "facing=west":  { "model": "trailmix:block/soda_machine", "y": 270 },
+    "facing=east":  { "model": "trailmix:block/soda_machine", "y": 90 }
+  }
+}

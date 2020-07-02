@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "trailmix:block/busted_tv" },
+    "facing=south": { "model": "trailmix:block/busted_tv", "y": 180 },
+    "facing=west":  { "model": "trailmix:block/busted_tv", "y": 270 },
+    "facing=east":  { "model": "trailmix:block/busted_tv", "y": 90 }
+  }
+}

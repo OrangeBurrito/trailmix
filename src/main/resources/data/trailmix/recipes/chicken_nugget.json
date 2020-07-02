@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:chicken"
+    }
+  ],
+  "result":
+  {
+    "item": "trailmix:chicken_nugget",
+    "count": 9
+  }
+}

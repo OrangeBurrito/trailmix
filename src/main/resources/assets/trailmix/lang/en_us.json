@@ -1,7 +1,16 @@
 {
   "item.trailmix.baguette": "Baguette",
-  "item.trailmix.chicken_nugget": "Chicken Nugget",
+  "item.trailmix.chicken_nugget": "Raw Chicken Nugget",
   "item.trailmix.cooked_chicken_nugget": "Cooked Chicken Nugget",
 
-  "block.trailmix.old_stonecutter": "Old Stonecutter"
+  "block.trailmix.old_stonecutter": "Old Stonecutter",
+  "block.trailmix.soda_machine": "Soda Machine",
+  "block.trailmix.tent": "Tent",
+  "block.trailmix.sack": "Sack",
+  "block.trailmix.laptop_0": "Laptop",
+  "block.trailmix.gamecube": "Gamecube",
+  "block.trailmix.crt": "CRT Monitor",
+  "block.trailmix.busted_tv": "Busted Television",
+
+  "itemGroup.trailmixtab": "Trail Mix"
 }

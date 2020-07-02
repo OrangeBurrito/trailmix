@@ -1,12 +1,9 @@
 {
   "parent": "block/cube",
   "textures": {
-    "particle": "trailmix:blocks/old_stonecutter_bottom",
-    "down": "trailmix:blocks/old_stonecutter_bottom",
-    "up": "trailmix:blocks/old_stonecutter_top",
-    "north": "trailmix:blocks/old_stonecutter_front",
-    "east": "trailmix:blocks/old_stonecutter_side",
-    "south": "trailmix:blocks/old_stonecutter_side",
-    "west": "trailmix:blocks/old_stonecutter_side"
+    "top": "trailmix:blocks/old_stonecutter_top",
+    "bottom": "trailmix:blocks/old_stonecutter_bottom",
+    "front": "trailmix:blocks/old_stonecutter_front",
+    "side": "trailmix:blocks/old_stonecutter_side"
   }
 }

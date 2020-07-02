@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "trailmix:block/crt" },
+    "facing=south": { "model": "trailmix:block/crt", "y": 180 },
+    "facing=west":  { "model": "trailmix:block/crt", "y": 270 },
+    "facing=east":  { "model": "trailmix:block/crt", "y": 90 }
+  }
+}
