@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "trailmix:block/camera"},
+    "facing=south": { "model": "trailmix:block/camera", "y": 180},
+    "facing=west":  { "model": "trailmix:block/camera", "y": 270},
+    "facing=east":  { "model": "trailmix:block/camera", "y": 90}
+  }
+}

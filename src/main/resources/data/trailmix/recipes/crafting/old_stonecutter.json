@@ -1,20 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern":
-  [
-    "xx ",
-    "xx ",
+  "pattern": [
+    "## ",
+    "## ",
     "   "
   ],
-  "key":
-  {
-    "x":
-    {
+  "key": {
+    "#": {
       "item": "minecraft:cobblestone"
     }
   },
-  "result":
-  {
+  "result": {
     "item": "trailmix:old_stonecutter",
     "count": 1
   }

@@ -8,9 +8,11 @@
   "block.trailmix.tent": "Tent",
   "block.trailmix.sack": "Sack",
   "block.trailmix.laptop_0": "Laptop",
+  "block.trailmix.laptop_1": "Laptop",
   "block.trailmix.gamecube": "Gamecube",
   "block.trailmix.crt": "CRT Monitor",
   "block.trailmix.busted_tv": "Busted Television",
+  "block.trailmix.camera": "Camera",
 
   "itemGroup.trailmixtab": "Trail Mix"
 }

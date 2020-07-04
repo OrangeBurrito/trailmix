@@ -1,5 +1,5 @@
 {
-  "parent": "block/cube",
+  "parent": "block/orientable",
   "textures": {
     "top": "trailmix:blocks/old_stonecutter_top",
     "bottom": "trailmix:blocks/old_stonecutter_bottom",

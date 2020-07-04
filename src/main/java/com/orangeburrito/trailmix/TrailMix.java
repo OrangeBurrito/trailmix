@@ -25,9 +25,9 @@ import org.apache.logging.log4j.Logger;
 @Mod("trailmix")
 @Mod.EventBusSubscriber(modid = TrailMix.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TrailMix {
-    public static TrailMix instance;
-    public static final String MOD_ID = "trailmix";
     public static final Logger LOGGER = LogManager.getLogger();
+    public static final String MOD_ID = "trailmix";
+    public static TrailMix instance;
 
     public TrailMix() {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -44,7 +44,9 @@ public class TrailMix {
     @SubscribeEvent
     public static void onRegisterItems(final RegistryEvent.Register<Item> event) {
         final IForgeRegistry<Item> registry = event.getRegistry();
-        BlockInit.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
+
+        BlockInit.BLOCKS.getEntries().stream()
+                .map(RegistryObject::get).forEach(block -> {
             final Item.Properties properties = new Item.Properties().group(TrailMixItemGroup.instance);
             final BlockItem blockItem = new BlockItem(block, properties);
             blockItem.setRegistryName(block.getRegistryName());
