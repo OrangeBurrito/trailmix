@@ -1,4 +1,4 @@
-# Blender MTL File: 'gamecube.blend'
+# Blender MTL File: 'gamecube_boundingbox.blend'
 # Material Count: 1
 
 newmtl Material.001
@@ -10,4 +10,4 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd /Users/OrangeBurrito/Documents/code/java/TrailMix/src/main/resources/assets/trailmix/textures/blocks/gamecube.png
+map_Kd trailmix:blocks/gamecube

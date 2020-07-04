@@ -21,10 +21,10 @@ public class CRT extends Block {
 
     public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 
-    private static final VoxelShape SHAPE_N = Block.makeCuboidShape(2, 0, 2, 13.75, 9, 15.25);
-    private static final VoxelShape SHAPE_S = Block.makeCuboidShape(2.25, 0, 0.75, 14, 9, 14);
-    private static final VoxelShape SHAPE_E = Block.makeCuboidShape(0.75, 0, 2, 14, 9, 13.75);
-    private static final VoxelShape SHAPE_W = Block.makeCuboidShape(2, 0, 2.25, 15.25, 9, 14);
+    private static final VoxelShape SHAPE_N = Block.makeCuboidShape(0.125, 0, 1.875, 15.735, 16.25, 15.875);
+    private static final VoxelShape SHAPE_S = Block.makeCuboidShape(0.1457, 0, -0.0249, 15.875, 16.25, 14.125);
+    private static final VoxelShape SHAPE_E = Block.makeCuboidShape(-0.0249, 0, 0.125, 14.125, 16.25, 15.875);
+    private static final VoxelShape SHAPE_W = Block.makeCuboidShape(1.875, 0, 0.1457, 16.25, 16.25, 15.875);
 
     public CRT(Properties properties) {
         super(properties);

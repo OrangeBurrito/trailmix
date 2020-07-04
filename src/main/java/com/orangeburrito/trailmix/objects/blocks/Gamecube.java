@@ -23,10 +23,10 @@ public class Gamecube extends Block {
 
     public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 
-    private static final VoxelShape SHAPE_N = Block.makeCuboidShape(2, 0, 2, 13.75, 9, 15.25);
-    private static final VoxelShape SHAPE_S = Block.makeCuboidShape(2.25, 0, 0.75, 14, 9, 14);
-    private static final VoxelShape SHAPE_E = Block.makeCuboidShape(0.75, 0, 2, 14, 9, 13.75);
-    private static final VoxelShape SHAPE_W = Block.makeCuboidShape(2, 0, 2.25, 15.25, 9, 14);
+    private static final VoxelShape SHAPE_N = VoxelShapes.combineAndSimplify(Block.makeCuboidShape(4.25, 2.375, 1.375, 11.75, 5.625, 1.875), Block.makeCuboidShape(3, 0, 1.875, 13, 7.5, 14), IBooleanFunction.OR);
+    private static final VoxelShape SHAPE_S = VoxelShapes.combineAndSimplify(Block.makeCuboidShape(4.25, 2.375, 14.125, 11.75, 5.625, 14.625), Block.makeCuboidShape(3, 0, 2, 13, 7.5, 14.125), IBooleanFunction.OR);
+    private static final VoxelShape SHAPE_E = VoxelShapes.combineAndSimplify(Block.makeCuboidShape(14.125, 2.375, 4.25, 14.625, 5.625, 11.75), Block.makeCuboidShape(2, 0, 3, 14.125, 7.5, 13), IBooleanFunction.OR);
+    private static final VoxelShape SHAPE_W = VoxelShapes.combineAndSimplify(Block.makeCuboidShape(1.375, 2.375, 4.25, 1.875, 5.625, 11.75), Block.makeCuboidShape(1.875, 0, 3, 14, 7.5, 13), IBooleanFunction.OR);
 
     public Gamecube(Properties properties) {
         super(properties);
